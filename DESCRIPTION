@@ -1,15 +1,17 @@
-Package: prg
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Package: prgdownloader
+Title: Pobieranie danych PRG
+Version: 0.1
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Jakub",
+           family = "Skowroński",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = structure("YOUR-ORCID-ID", .Names = "ORCID"))
-Description: What the package does (one paragraph).
+           email = "skowronski.jakub97@gmail.com")
+Description: Pobieranie danych z PRG
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2
+Imports:
+  sf,
+  jsonlite
