@@ -15,8 +15,14 @@
 #' get_prg('jEarp1RvgA4SgU3lWv3_sQ', 'powiaty', '1815')
 #' get_prg('jEarp1RvgA4SgU3lWv3_sQ', 'wojewodztwa', '24,16,30')
 get_prg = function(api_key, unit, teryt){
+  validation = httr::GET(
+    base::sprintf('http://3.122.248.217/check_key?api-key=%s', api_key)
+  )
+  if (validation$status_code == 403){
+    base::stop("Podany klucz jest nieprawidłowy. Nie posiadasz klucza? Wejdź na 3.122.248.217 i zdobądź go lub użyj funkcji get_key().")
+  }
   prg_data = sf::st_read(
-    sprintf("http://3.122.248.217/features/%s?api-key=%s&teryt=%s", unit, api_key, teryt),
+    base::sprintf("http://3.122.248.217/features/%s?api-key=%s&teryt=%s", unit, api_key, teryt),
     crs = 2180
     )
   return(prg_data)

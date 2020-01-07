@@ -3,6 +3,7 @@
 export(get_commune)
 export(get_country)
 export(get_county)
+export(get_key)
 export(get_meta)
 export(get_prg)
 export(get_province)
