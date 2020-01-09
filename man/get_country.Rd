@@ -4,10 +4,7 @@
 \alias{get_country}
 \title{Pobieranie granic Polski z PRG}
 \usage{
-get_country(api_key)
-}
-\arguments{
-\item{api_key}{twój klucz do API}
+get_country()
 }
 \value{
 obiekt sf zawierający atrybuty i geometrię dla Polski
@@ -16,5 +13,7 @@ obiekt sf zawierający atrybuty i geometrię dla Polski
 Funkcja służąca do pobrania granic Polski
 }
 \examples{
-get_country('jEarp1RvgA4SgU3lWv3_sQ')
+\dontrun{
+get_country()
+}
 }

@@ -4,18 +4,25 @@
 \alias{get_commune}
 \title{Pobieranie granic gmin z PRG}
 \usage{
-get_commune(api_key)
+get_commune(filter)
 }
 \arguments{
-\item{api_key}{twój klucz do API}
+\item{filter}{filtr danych np. gminy dla danego powiatu (kod teryt)}
 }
 \value{
 obiekt sf zawierający atrybuty i geometrię pobranych gmin
 }
 \description{
-Funkcja służąca do pobierania granic wszystkich gmin
+Funkcja służąca do pobierania granic wszystkich gmin.
 UWAGA - JEST TO DUŻY ZESTAW DANYCH
 }
 \examples{
-get_commune('jEarp1RvgA4SgU3lWv3_sQ')
+\dontrun{
+#Pobranie wszystkich gmin
+get_commune()
+#Pobranie gmin dla powiatu chodzieskiego
+get_commune('3001')
+#Pobranie gmin dla województwa wielkopolskiego
+get_commune('30')
+}
 }

@@ -4,11 +4,9 @@
 \alias{get_prg}
 \title{Pobieranie wybranych jednostek PRG}
 \usage{
-get_prg(api_key, unit, teryt)
+get_prg(unit, teryt)
 }
 \arguments{
-\item{api_key}{twój klucz do API}
-
 \item{unit}{jednostka PRG}
 
 \item{teryt}{kod teryt lub lista terytów}
@@ -21,7 +19,9 @@ Funkcja słóżąca do pobierania wybranych
 jednostek PRG z api
 }
 \examples{
-get_prg('jEarp1RvgA4SgU3lWv3_sQ', 'gminy', '3064011,2602042')
-get_prg('jEarp1RvgA4SgU3lWv3_sQ', 'powiaty', '1815')
-get_prg('jEarp1RvgA4SgU3lWv3_sQ', 'wojewodztwa', '24,16,30')
+\dontrun{
+get_prg('123ads', 'gminy', '3064011,2602042')
+get_prg('123ads', 'powiaty', '1815')
+get_prg('123ads', 'wojewodztwa', '24,16,30')
+}
 }

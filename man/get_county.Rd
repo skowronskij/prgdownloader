@@ -4,18 +4,23 @@
 \alias{get_county}
 \title{Pobieranie granic powiatów z PRG}
 \usage{
-get_county(api_key)
+get_county(filter)
 }
 \arguments{
-\item{api_key}{twój klucz do API}
+\item{filter}{filtr danych np. powiaty dla danego województwa (kod teryt)}
 }
 \value{
 obiekt sf zawierający atrybuty i geometrię pobranych granic powiatów
 }
 \description{
-Funkcja służąca do pobierania granic wszystkich powiatów
+Funkcja służąca do pobierania granic wszystkich powiatów.
 UWAGA - JEST TO DUŻY ZESTAW DANYCH
 }
 \examples{
-get_county('jEarp1RvgA4SgU3lWv3_sQ')
+\dontrun{
+#Pobranie wszystkich powiatów
+get_county()
+#Pobranie powiatów dla województwa wielkopolskiego
+get_county('30')
+}
 }

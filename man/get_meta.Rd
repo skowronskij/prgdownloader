@@ -4,11 +4,9 @@
 \alias{get_meta}
 \title{Pobieranie terytów wybranych jednostek}
 \usage{
-get_meta(api_key, unit)
+get_meta(unit)
 }
 \arguments{
-\item{api_key}{twój klucz do API}
-
 \item{unit}{jednostka PRG}
 }
 \value{
@@ -18,5 +16,7 @@ dataframe zawierający nazwę oraz teryt wybranych jednostek
 Funkcja służąca do pobierania terytów i nazw wybranych jednostek PRG
 }
 \examples{
-get_meta('jEarp1RvgA4SgU3lWv3_sQ', 'wojewodztwa')
+\dontrun{
+get_meta('wojewodztwa')
+}
 }

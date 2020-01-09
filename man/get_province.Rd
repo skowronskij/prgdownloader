@@ -4,10 +4,7 @@
 \alias{get_province}
 \title{Pobieranie granic województw z PRG}
 \usage{
-get_province(api_key)
-}
-\arguments{
-\item{api_key}{twój klucz do API}
+get_province()
 }
 \value{
 obiekt sf zawierający atrybuty i geometrię pobranych województw
@@ -17,5 +14,8 @@ Funkcja służąca do pobierania granic wszystkich województw
 UWAGA - JEST TO DUŻY ZESTAW DANYCH
 }
 \examples{
-get_province('jEarp1RvgA4SgU3lWv3_sQ')
+\dontrun{
+Pobranie wszystkich województw
+get_province()
+}
 }
