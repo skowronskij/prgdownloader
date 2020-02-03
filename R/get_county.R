@@ -21,7 +21,7 @@ get_county = function(filter){
     stop('Brak klucza PRG API. Zdobądz go używając funkcji `get_key()` bądź na stronie 3.122.248.217/getkey.
          Następnie zapisz klucz przez funkcję `save_key()`')
   }
-  endpoint = sprintf("http://3.122.248.217/tables/gminy?api-key=%s", api_key)
+  endpoint = sprintf("http://3.120.210.65/tables/gminy?api-key=%s", api_key)
   if (!missing(filter)){
     endpoint = paste(endpoint, filter, sep = '&filter=')
   }

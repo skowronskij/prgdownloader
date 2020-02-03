@@ -15,7 +15,8 @@ save_key = function(api_key){
     sprintf('http://3.120.210.65/check_key?api-key=%s', api_key)
   )
   if (validation$status_code == 403){
-    stop("Podany klucz jest nieprawidłowy. Nie posiadasz klucza? Wejdź na 3.122.248.217 i zdobądź go lub użyj funkcji get_key().")
+    stop("Podany klucz jest nieprawidłowy. Nie posiadasz klucza?
+         Wejdź na 3.122.248.217 i zdobądź go lub użyj funkcji get_key().")
   }
   home = Sys.getenv('HOME')
   renv = file.path(home, ".Renviron")
@@ -28,5 +29,6 @@ save_key = function(api_key){
   key_var = paste0("PRG_API_KEY='", api_key, "'")
   write(key_var, renv, sep = "\n", append = TRUE)
   message('Twój klucz api prg został zapisany w pliku .Renviron. Dostęp do niego można uzyskać
-          przez `Sys.getenv("PRG_API_KEY")`. \nAby użyć go teraz, zrestartuj R lub uruchom `readRenviron("~/.Renviron")`')
+          przez `Sys.getenv("PRG_API_KEY")`.
+          \nAby użyć go teraz, zrestartuj R lub uruchom `readRenviron("~/.Renviron")`')
 }
