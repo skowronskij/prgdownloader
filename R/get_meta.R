@@ -18,7 +18,7 @@ get_meta = function(unit){
          Następnie zapisz klucz przez funkcję `save_key()`')
   }
   prg_data = jsonlite::fromJSON(
-    sprintf("http://3.122.248.217/features_meta/%s?api-key=%s", unit, api_key)
+    sprintf("http://3.120.210.65/features_meta/%s?api-key=%s", unit, api_key)
   )
   return(prg_data)
 }

@@ -23,13 +23,13 @@ get_commune = function(filter){
     stop('Brak klucza PRG API. Zdobądz go używając funkcji `get_key()` bądź na stronie 3.122.248.217/getkey.
          Następnie zapisz klucz przez funkcję `save_key()`')
   }
-  endpoint = sprintf("http://3.122.248.217/tables/gminy?api-key=%s", api_key)
+  endpoint = sprintf("http://3.120.210.65/tables/gminy?api-key=%s", api_key)
   if (!missing(filter)){
     endpoint = paste(endpoint, filter, sep = '&filter=')
   }
   prg_data = sf::st_read(
     endpoint,
-    crs = 2180
+    crs = 4326
   )
   return(prg_data)
 }

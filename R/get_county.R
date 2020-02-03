@@ -27,7 +27,7 @@ get_county = function(filter){
   }
   prg_data = sf::st_read(
     endpoint,
-    crs = 2180
+    crs = 4326
   )
   return(prg_data)
 }

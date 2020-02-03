@@ -22,8 +22,8 @@ get_prg = function(unit, teryt){
          Następnie zapisz klucz przez funkcję `save_key()`')
   }
   prg_data = sf::st_read(
-    sprintf("http://3.122.248.217/features/%s?api-key=%s&teryt=%s", unit, api_key, teryt),
-    crs = 2180
+    sprintf("http://3.120.210.65/features/%s?api-key=%s&teryt=%s", unit, api_key, teryt),
+    crs = 4326
     )
   return(prg_data)
 }

@@ -12,7 +12,7 @@
 #' }
 save_key = function(api_key){
   validation = httr::GET(
-    sprintf('http://3.122.248.217/check_key?api-key=%s', api_key)
+    sprintf('http://3.120.210.65/check_key?api-key=%s', api_key)
   )
   if (validation$status_code == 403){
     stop("Podany klucz jest nieprawidłowy. Nie posiadasz klucza? Wejdź na 3.122.248.217 i zdobądź go lub użyj funkcji get_key().")
