@@ -21,7 +21,7 @@ get_prg = function(unit, teryt){
     stop('Brak klucza PRG API. Zdobądz go używając funkcji `get_key()` bądź na stronie 3.122.248.217/getkey.
          Następnie zapisz klucz przez funkcję `save_key()`')
   }
-  prg_data = sf::st_read(
+  prg_data = sf::read_sf(
     sprintf("http://3.120.210.65/features/%s?api-key=%s&teryt=%s", unit, api_key, teryt),
     crs = 4326
     )

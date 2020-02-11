@@ -25,7 +25,7 @@ get_county = function(filter){
   if (!missing(filter)){
     endpoint = paste(endpoint, filter, sep = '&filter=')
   }
-  prg_data = sf::st_read(
+  prg_data = sf::read_sf(
     endpoint,
     crs = 4326
   )

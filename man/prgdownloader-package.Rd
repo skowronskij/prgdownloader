@@ -11,5 +11,10 @@ Pobieranie danych z PRG
 \author{
 \strong{Maintainer}: Jakub Skowroński \email{skowronski.jakub97@gmail.com}
 
+Authors:
+\itemize{
+  \item Jakub Nowosad \email{nowosad.jakub@gmail.com} (\href{https://orcid.org/0000-0002-1057-3721}{ORCID})
+}
+
 }
 \keyword{internal}
