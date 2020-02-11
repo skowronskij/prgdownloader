@@ -1,11 +1,14 @@
 Package: prgdownloader
 Title: Pobieranie danych PRG
 Version: 0.1
-Authors@R: 
-    person(given = "Jakub",
+Authors@R: c(person(given = "Jakub",
            family = "Skowroński",
            role = c("aut", "cre"),
-           email = "skowronski.jakub97@gmail.com")
+           email = "skowronski.jakub97@gmail.com"),
+           person("Jakub", "Nowosad",
+           email = "nowosad.jakub@gmail.com",
+           role = c("aut"),
+           comment = c(ORCID = "0000-0002-1057-3721")))
 Description: Pobieranie danych z PRG
 License: MIT + file LICENSE
 Encoding: UTF-8
